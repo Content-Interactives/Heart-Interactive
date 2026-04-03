@@ -1,43 +1,28 @@
 # Heart Interactive
 
-This repository contains the code for the **Heart Interactive**, designed to help students explore and understand the anatomy and function of the human heart with interactive visuals and instant feedback.
+Static web app for human heart anatomy (headings and SVG-backed visuals). See [Standards.md](Standards.md) for curriculum placement.
 
----
+**Live:** https://content-interactives.github.io/Heart-Interactive/
 
-## ​ Live Interactive
+## Development
 
-Try it out here:  
-👉 https://content-interactives.github.io/Heart-Interactive/
+From the repo root:
 
----
+```bash
+npx serve .
+```
 
-## ​ Where This Interactive Is Being Used
+Open `index.html`.
 
-This interactive is currently featured in the following locations:
+## Layout
 
-- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
-  - 👉 PRODUCTION: [PENDING]  
-  - 👉 MASTER: [PENDING]
-- 📘 **CK-12 Flexbooks**  
-  - 👉 [PENDING: Book/lesson link where this interactive appears]
+- `index.html` — entry  
+- `*.svg` — heart structures and labels in the repository root (or paths referenced by `index.html`)
 
----
+## Stack
 
-## ​ Standards & Subjects
+HTML, CSS, JavaScript.
 
-This interactive aligns with the following topics and standards:
+## Deployment
 
-- **📂 Subject Area**: Middle School – High School Science  
-- **🫀 Topic**: Human Heart Anatomy — Identifying key parts (e.g., atria, ventricles, valves) through interactive visuals  
-- **📏 Next Generation Science Standards (NGSS)**:  
-  - **MS-LS1-3** – Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells.  
-  - **HS-LS1-2** – Develop and use a model to illustrate how structures of the body provide specific functions.  
-  - **NGSS.MS-LS1-3** – Use argument supported by evidence that includes how the body is a system of interacting subsystems.
-
----
-
-## ​​ Developer Notes
-
-- **Built with**: HTML, CSS, Javascript 
-- **Deployed via**: GitHub Pages  
-- **See**: `index.html` and multiple `.svg` files representing anatomical parts in repository root :contentReference[oaicite:1]{index=1}
+Host the static files on GitHub Pages or any static CDN; no build step.
